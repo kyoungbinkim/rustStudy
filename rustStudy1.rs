@@ -281,6 +281,13 @@ fn main(){
         FnMut: the closure uses the captured value by mutable reference (&mut T)
         FnOnce: the closure uses the captured value by value (T)
     */
+    fn do_twice<F>(mut func: F)
+        where F: FnMut()
+    {
+        func();
+        func();
+    }
+
     fn apply1<F>(f:F) where F:FnOnce(){
         f();
     }
@@ -288,6 +295,7 @@ fn main(){
         f();
     }
     apply1(|| println!("apply1 hello world!"));
+    do_twice(|| println!("do tiwce !"));
 
 
     // 16. mapping 
