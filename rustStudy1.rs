@@ -4,6 +4,8 @@
 * 참고자료    : https://sarojaba.github.io/rust-doc-korean/doc/tutorial.html   << 정리
 * 볼만한 자료 : https://doc.rust-lang.org/book/title-page.html 
 *               https://doc.rust-lang.org/std/fmt/ 
+*       
+*           ⭐️ https://rinthel.github.io/rust-lang-book-ko/foreword.html ⭐️
 */
 
 
